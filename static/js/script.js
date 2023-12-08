@@ -17,3 +17,47 @@ $('.inbox-calendar').click(function(){
  $('.inbox-container').toggleClass('hide');
  $('.mail-detail').toggleClass('hide');
 });
+
+// Функция для загрузки задач с бэкенда и отображения на странице
+async function loadTasks() {
+  try {
+    const response = await fetch('https://your-backend-url/api/tasks');
+    if (!response.ok) {
+      throw new Error('Failed to fetch tasks');
+    }
+    
+    const tasks = await response.json();
+    const tasksList = document.querySelector('.tasks-list');
+    
+    // Очищаем содержимое блока tasks-list перед добавлением новых задач
+    tasksList.innerHTML = '';
+
+    // Создаем HTML элементы для каждой задачи и добавляем их на страницу
+    tasks.forEach(task => {
+      const taskDiv = document.createElement('div');
+      taskDiv.classList.add('task');
+
+      const taskTextDiv = document.createElement('div');
+      taskTextDiv.classList.add('task-text');
+
+      const taskTitleDiv = document.createElement('div');
+      taskTitleDiv.classList.add('task-title');
+      taskTitleDiv.textContent = task.title;
+
+      const taskDescDiv = document.createElement('div');
+      taskDescDiv.classList.add('task-desc');
+      taskDescDiv.textContent = task.description;
+
+      taskTextDiv.appendChild(taskTitleDiv);
+      taskTextDiv.appendChild(taskDescDiv);
+
+      taskDiv.appendChild(taskTextDiv);
+      tasksList.appendChild(taskDiv);
+    });
+  } catch (error) {
+    console.error('Error loading tasks:', error);
+  }
+}
+
+// Вызываем функцию loadTasks() при загрузке страницы
+window.addEventListener('DOMContentLoaded', loadTasks);

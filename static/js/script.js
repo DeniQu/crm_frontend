@@ -22,7 +22,7 @@ console.log('success')
 // Функция для загрузки задач с бэкенда и отображения на странице
 async function loadTasks() {
   try {
-    const response = await fetch('https://crm-backend-91cy.onrender.com/api/data');
+    const response = await fetch('https://crm-backend-91cy.onrender.com/api/data/');
     if (!response.ok) {
       throw new Error('Failed to fetch tasks');
     }

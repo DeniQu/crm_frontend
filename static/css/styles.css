@@ -292,14 +292,14 @@ display=swap&#39;
     display: flex;
     flex-direction: column;
   }
-  .task-tittle {
+  .task-title {
     color: #0d101c;
     font-feature-settings: "clig" off, "liga" off;
     letter-spacing: -0.32px;
     font: 500 16px/130% Poppins, sans-serif;
     width: 100%;
   }
-  .task-descr {
+  .task-desc {
     webkit-box-orient: vertical;
     webkit-line-clamp: 2;
     overflow: hidden;

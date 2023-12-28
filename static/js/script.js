@@ -57,7 +57,7 @@ async function loadTasks() {
       tasksList.appendChild(taskDiv);
     });
   } catch (error) {
-    console.error('Error loading tasks:', error);
+    console.error('Error loading tasks:', error, tasks);
   }
 }
 

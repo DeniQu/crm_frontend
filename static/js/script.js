@@ -21,7 +21,7 @@
 // Функция для загрузки задач с бэкенда и отображения на странице
 async function loadTasks() {
   try {
-    const response = await fetch('https://tg-crm-backend.onrender.com/task/?format=json');
+    const response = await fetch('https://tg-crm-backend.onrender.com/task/');
     if (!response.ok) {
       throw new Error('Failed to fetch tasks');
     }

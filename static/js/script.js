@@ -27,7 +27,7 @@ async function loadTasks() {
     }
     
     const tasks = await response.json();
-    console.log(tasks)
+    console.error('Error loading tasks:', tasks);
     const tasksList = document.querySelector('.tasks-list');
     
     // Очищаем содержимое блока tasks-list перед добавлением новых задач
@@ -56,7 +56,7 @@ async function loadTasks() {
       tasksList.appendChild(taskDiv);
     });
   } catch (error) {
-    console.error('Error loading tasks:', error, tasks);
+    console.error('Error loading tasks:', error);
   }
 }
 

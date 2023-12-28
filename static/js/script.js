@@ -28,6 +28,7 @@ async function loadTasks() {
     }
     
     const tasks = await response.json();
+    console.log(tasks)
     const tasksList = document.querySelector('.tasks-list');
     
     // Очищаем содержимое блока tasks-list перед добавлением новых задач

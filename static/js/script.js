@@ -97,12 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       switch (filterClass) {
         case 'all':
-          const allTasks = tasksData;
+          const allTasks = tasksData.filter(task => getStatusClass(task) === 'new' || 'progress' );
           displayTasks(allTasks);
-          console.error('nu davay', allTasks);
+
         default:
           const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
+          console.error('filtered', filteredTasks);
           displayTasks(filteredTasks);
+
       }
     });
   });

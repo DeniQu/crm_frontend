@@ -52,12 +52,12 @@ function displayTasks(tasks) {
     const taskInfoDiv = createDivElement('task-info');
 
     const taskCategoryDiv = createDivElement('task-category');
-    taskCategoryDiv.appendChild(createImageElement('https://icons8.ru/icon/5344/средний-приоритет', 'task-category-img'));
+    taskCategoryDiv.appendChild(createImageElement('	https://img.icons8.com/?size=256&id=5344&format=png', 'task-category-img'));
     taskCategoryDiv.appendChild(createDivElement('task-category-text', task.category));
     taskInfoDiv.appendChild(taskCategoryDiv);
 
     const taskDateDiv = createDivElement('task-date');
-    taskDateDiv.appendChild(createImageElement('https://icons8.ru/icon/42287/календарь', 'task-date-img'));
+    taskDateDiv.appendChild(createImageElement('https://img.icons8.com/?size=256&id=42287&format=png', 'task-date-img'));
     taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
     taskInfoDiv.appendChild(taskDateDiv);
 

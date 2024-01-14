@@ -8,7 +8,6 @@ async function loadTasks() {
     }
 
     tasksData = await response.json();
-    console.error('Error loading tasks:', tasksData);
 
     const tasksList = document.querySelector('.tasks-list');
     tasksList.innerHTML = '';
@@ -99,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       switch (filterClass) {
         case 'all':
           displayTasks(tasksData);
+          console.error('IT SHOULD WORK', filterClass);
         default:
           const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
           displayTasks(filteredTasks);

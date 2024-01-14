@@ -57,7 +57,7 @@ function displayTasks(tasks) {
     taskInfoDiv.appendChild(taskCategoryDiv);
 
     const taskDateDiv = createDivElement('task-date');
-    taskDateDiv.appendChild(createImageElement(task.dateImageSrcset, 'task-date-img'));
+    taskDateDiv.appendChild(createImageElement('https://icons8.ru/icon/42287/календарь', 'task-date-img'));
     taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
     taskInfoDiv.appendChild(taskDateDiv);
 

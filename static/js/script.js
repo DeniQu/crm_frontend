@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
   statusDivs.forEach(statusDiv => {
     statusDiv.addEventListener('click', () => {
       const filterClass = statusDiv.classList[1];
-      console.error('Error loading tasks:', filterClass);
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
 

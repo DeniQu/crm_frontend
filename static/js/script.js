@@ -52,7 +52,7 @@ function displayTasks(tasks) {
     const taskInfoDiv = createDivElement('task-info');
 
     const taskCategoryDiv = createDivElement('task-category');
-    taskCategoryDiv.appendChild(createImageElement(task.categoryImageSrcset, 'task-category-img'));
+    taskCategoryDiv.appendChild(createImageElement('https://icons8.ru/icon/5344/средний-приоритет', 'task-category-img'));
     taskCategoryDiv.appendChild(createDivElement('task-category-text', task.category));
     taskInfoDiv.appendChild(taskCategoryDiv);
 

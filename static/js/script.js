@@ -28,7 +28,6 @@ async function loadTasks() {
     }
 
     const tasks = await response.json();
-    console.error('Error loading tasks:', tasks);
     
     const tasksList = document.querySelector('.tasks-list');
     tasksList.innerHTML = '';

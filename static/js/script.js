@@ -81,12 +81,12 @@ async function loadTasks() {
       dateImgElement.setAttribute("loading", "lazy");
       dateImgElement.setAttribute("srcset", "https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;");
       dateImgElement.setAttribute("class", "task-date-img");
-      const taskCategoryDateDiv = document.createElement('div');
-      taskCategoryTextDiv.classList.add('task-date-text');
-      taskCategoryTextDiv.textContent = task.date;
+      const taskDateTextDiv = document.createElement('div');
+      taskDateTextDiv.classList.add('task-date-text');
+      taskDateTextDiv.textContent = task.date;
       
       taskDateDiv.appendChild(dateImgElement);
-      taskDateDiv.appendChild(taskCategoryDateDiv);
+      taskDateDiv.appendChild(taskDateTextDiv);
       taskInfoDiv.appendChild(taskDateDiv);
 
       const taskStatusDiv = document.createElement('div');

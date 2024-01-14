@@ -59,7 +59,7 @@ async function loadTasks() {
       taskBarDiv.classList.add('task-bar');
 
       const taskInfoDiv = document.createElement('div');
-      taskDescDiv.classList.add('task-info');
+      taskInfoDiv.classList.add('task-info');
 
       const taskCategoryDiv = document.createElement('div');
       taskCategoryDiv.classList.add('task-category');

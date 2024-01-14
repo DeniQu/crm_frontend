@@ -62,7 +62,7 @@ function displayTasks(tasks) {
     taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
     taskInfoDiv.appendChild(taskDateDiv);
 
-    const taskStatusDiv = createDivElement(getStatusClass(task.status), task.status);
+    const taskStatusDiv = createDivElement(getStatusClass(task), task.status);
 
     taskBarDiv.appendChild(taskInfoDiv);
     taskBarDiv.appendChild(taskStatusDiv);
@@ -73,8 +73,8 @@ function displayTasks(tasks) {
   });
 }
 
-function getStatusClass(status) {
-  switch (status) {
+function getStatusClass(task) {
+  switch (task.status) {
     case 'In progress':
       return 'task-status-progress';
     case 'Done':
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterClass = statusDiv.classList[1];
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
-      const filteredTasks = tasksData.filter(task => getStatusClass(task.status) === filterClass);
+      const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
       displayTasks(filteredTasks);
     });
   });

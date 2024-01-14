@@ -33,70 +33,74 @@ async function loadTasks() {
     // Очищаем содержимое блока tasks-list перед добавлением новых задач
     tasksList.innerHTML = '';
 
-    function createElementWithClass(elementType, className) {
-        const element = document.createElement(elementType);
-        element.classList.add(className);
-        return element;
-      }
+    tasks.forEach(task => {
+      const taskDiv = document.createElement('div');
+      taskDiv.classList.add('task');
+
       
-      function createImageElement(srcset, className) {
-        const imgElement = createElementWithClass('img', className);
-        imgElement.setAttribute("loading", "lazy");
-        imgElement.setAttribute("srcset", srcset);
-        return imgElement;
-      }
+      const taskTextDiv = document.createElement('div');
+      taskTextDiv.classList.add('task-text');
+
+      const taskTitleDiv = document.createElement('div');
+      taskTitleDiv.classList.add('task-title');
+      taskTitleDiv.textContent = task.title;
+
+      const taskDescDiv = document.createElement('div');
+      taskDescDiv.classList.add('task-desc');
+      taskDescDiv.textContent = task.description;
+
+      taskTextDiv.appendChild(taskTitleDiv);
+      taskTextDiv.appendChild(taskDescDiv);
+
+      taskDiv.appendChild(taskTextDiv);
+
+
+      const taskBarDiv = document.createElement('div');
+      taskBarDiv.classList.add('task-bar');
+
+      const taskInfoDiv = document.createElement('div');
+      taskDescDiv.classList.add('task-info');
+
+      const taskCategoryDiv = document.createElement('div');
+      taskCategoryDiv.classList.add('task-category');
+      const categoryImgElement = document.createElement("img");
+      categoryImgElement.setAttribute("loading", "lazy");
+      categoryImgElement.setAttribute("srcset", "https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1efaa102-478c-47f5-b4a7-115f3c51dbe3?apiKey=eaec1f28c47f4f7186367d053711b635&amp;");
+      categoryImgElement.setAttribute("class", "task-category-img");
+      const taskCategoryTextDiv = document.createElement('div');
+      taskCategoryTextDiv.classList.add('task-category-text');
+      taskCategoryTextDiv.textContent = task.category;
       
-      function createTextElementWithClass(text, className) {
-        const element = createElementWithClass('div', className);
-        element.textContent = text;
-        return element;
-      }
+      taskCategoryDiv.appendChild(categoryImgElement);
+      taskCategoryDiv.appendChild(taskCategoryTextDiv);
+      taskInfoDiv.appendChild(taskCategoryDiv);
+
+      const taskDateDiv = document.createElement('div');
+      taskDateDiv.classList.add('task-date');
+      const dateImgElement = document.createElement("img");
+      dateImgElement.setAttribute("loading", "lazy");
+      dateImgElement.setAttribute("srcset", "https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d8b9c1f4-2296-4770-b77f-79473f3fe01f?apiKey=eaec1f28c47f4f7186367d053711b635&amp;");
+      dateImgElement.setAttribute("class", "task-date-img");
+      const taskCategoryDateDiv = document.createElement('div');
+      taskCategoryTextDiv.classList.add('task-date-text');
+      taskCategoryTextDiv.textContent = task.date;
       
-      function createTaskDiv() {
-        const taskDiv = createElementWithClass('div', 'task');
-        const taskTextDiv = createElementWithClass('div', 'task-text');
+      taskDateDiv.appendChild(dateImgElement);
+      taskDateDiv.appendChild(taskCategoryDateDiv);
+      taskInfoDiv.appendChild(taskDateDiv);
+
+      const taskStatusDiv = document.createElement('div');
+      taskStatusDiv.classList.add('task-status-new');
+      taskStatusDiv.textContent = task.status;
       
-        const taskTitleDiv = createTextElementWithClass(task.title, 'task-title');
-        const taskDescDiv = createTextElementWithClass(task.description, 'task-desc');
+      taskTextDiv.appendChild(taskInfoDiv);
+      taskTextDiv.appendChild(taskStatusDiv);
+
+      taskDiv.appendChild(taskBarDiv);
       
-        taskTextDiv.appendChild(taskTitleDiv);
-        taskTextDiv.appendChild(taskDescDiv);
-      
-        taskDiv.appendChild(taskTextDiv);
-      
-        const taskBarDiv = createElementWithClass('div', 'task-bar');
-        const taskInfoDiv = createElementWithClass('div', 'task-info');
-      
-        const taskCategoryDiv = createElementWithClass('div', 'task-category');
-        const categoryImgElement = createImageElement(task.categoryImageSrcset, 'task-category-img');
-        const taskCategoryTextDiv = createTextElementWithClass(task.category, 'task-category-text');
-      
-        taskCategoryDiv.appendChild(categoryImgElement);
-        taskCategoryDiv.appendChild(taskCategoryTextDiv);
-        taskInfoDiv.appendChild(taskCategoryDiv);
-      
-        const taskDateDiv = createElementWithClass('div', 'task-date');
-        const dateImgElement = createImageElement(task.dateImageSrcset, 'task-date-img');
-        const taskCategoryDateDiv = createTextElementWithClass(task.date, 'task-date-text');
-      
-        taskDateDiv.appendChild(dateImgElement);
-        taskDateDiv.appendChild(taskCategoryDateDiv);
-        taskInfoDiv.appendChild(taskDateDiv);
-      
-        const taskStatusDiv = createTextElementWithClass(task.status, 'task-status-new');
-      
-        taskTextDiv.appendChild(taskInfoDiv);
-        taskTextDiv.appendChild(taskStatusDiv);
-      
-        taskDiv.appendChild(taskBarDiv);
-      
-        return taskDiv;
-      }
-      
-      // Проходимся по каждой задаче и добавляем их в общий список
-      tasks.forEach(task => {
-        tasksList.appendChild(createTaskDiv());
-      });
+            
+      tasksList.appendChild(taskDiv);
+    });
   } catch (error) {
     console.error('Error loading tasks:', error);
   }

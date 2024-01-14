@@ -8,6 +8,7 @@ async function loadTasks() {
     }
 
     tasksData = await response.json();
+    console.error('Error loading tasks:', tasksData);
 
     const tasksList = document.querySelector('.tasks-list');
     tasksList.innerHTML = '';
@@ -61,7 +62,7 @@ function displayTasks(tasks) {
     taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
     taskInfoDiv.appendChild(taskDateDiv);
 
-    const taskStatusDiv = createDivElement(getStatusClass(task), task.status);
+    const taskStatusDiv = createDivElement(getStatusClass(task.status), task.status);
 
     taskBarDiv.appendChild(taskInfoDiv);
     taskBarDiv.appendChild(taskStatusDiv);
@@ -72,8 +73,8 @@ function displayTasks(tasks) {
   });
 }
 
-function getStatusClass(task) {
-  switch (task.status) {
+function getStatusClass(status) {
+  switch (status) {
     case 'In progress':
       return 'task-status-progress';
     case 'Done':
@@ -86,13 +87,13 @@ function getStatusClass(task) {
 document.addEventListener('DOMContentLoaded', () => {
   loadTasks();
 
-  const statusDivs = document.querySelectorAll('.status');
+  const statusDivs = document.querySelectorAll('.task-status-new, .task-status-progress, .task-status-completed');
   statusDivs.forEach(statusDiv => {
     statusDiv.addEventListener('click', () => {
       const filterClass = statusDiv.classList[1];
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
-      const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
+      const filteredTasks = tasksData.filter(task => getStatusClass(task.status) === filterClass);
       displayTasks(filteredTasks);
     });
   });

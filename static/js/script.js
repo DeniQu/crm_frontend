@@ -1,4 +1,4 @@
-$('.mail-choice').change(function() {
+('.mail-choice').change(function() {
     if($(this).is(":checked")) {
         $(this).parent().addClass('selected-bg');
   } else {
@@ -12,10 +12,10 @@ colorInput.addEventListener("input", (e) => {
  document.body.style.setProperty("--button-color", e.target.value);
 });
 
-$('.inbox-calendar').click(function(){
-  $('.calendar-container').toggleClass('calendar-show');
- $('.inbox-container').toggleClass('hide');
- $('.mail-detail').toggleClass('hide');
+('.inbox-calendar').click(function(){
+  ('.calendar-container').toggleClass('calendar-show');
+ ('.inbox-container').toggleClass('hide');
+ ('.mail-detail').toggleClass('hide');
 });
 
 

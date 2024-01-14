@@ -93,9 +93,6 @@ async function loadTasks() {
         return taskDiv;
       }
       
-      // Получаем ссылку на элемент, в который будем добавлять задачи
-      var tasksList = document.getElementById("tasks-list"); // Замените "tasksList" на актуальный ID вашего контейнера
-      
       // Проходимся по каждой задаче и добавляем их в общий список
       tasks.forEach(task => {
         tasksList.appendChild(createTaskDiv());

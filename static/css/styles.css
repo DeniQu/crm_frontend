@@ -214,7 +214,7 @@ display=swap&#39;
     letter-spacing: -0.4px;
     font: 500 20px/130% Poppins, sans-serif;
   }
-  .div-22 {
+  .task-statuses-bar {
     align-items: flex-start;
     align-self: stretch;
     border-radius: 42px;
@@ -231,7 +231,7 @@ display=swap&#39;
       justify-content: center;
     }
   }
-  .div-23 {
+  .status-active {
     color: #fff;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -243,19 +243,7 @@ display=swap&#39;
     padding: 4px;
     font: 600 14px/140% Poppins, sans-serif;
   }
-  .div-24 {
-    color: #6e7591;
-    text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
-    background-color: #fff;
-    flex: 1;
-    padding: 4px;
-    font: 400 14px/140% Poppins, sans-serif;
-  }
-  .div-25 {
+  .status {
     color: #6e7591;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;

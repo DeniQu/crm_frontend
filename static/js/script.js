@@ -90,10 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusDivs = document.querySelectorAll('.status');
   statusDivs.forEach(statusDiv => {
     statusDiv.addEventListener('click', () => {
-      const filterClass = statusDiv.classList[0];
+      const filterClass = statusDiv.classList[1];
+      console.error('Error loading tasks:', filterClass);
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
-      const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
+      const filteredTasks = tasksData.filter(task => getStatusClass(task) === 'task-status-completed');
       displayTasks(filteredTasks);
     });
   });

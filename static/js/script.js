@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       switch (filterClass) {
         case 'all':
           displayTasks(tasksData);
-          console.error('IT SHOULD WORK', tasksData);
+          console.error('IT SHOULD WORK', filterClass);
         default:
           const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
           displayTasks(filteredTasks);

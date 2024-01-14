@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Error loading tasks:', filterClass);
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
-      const filteredTasks = tasksData.filter(task => getStatusClass(task) === 'task-status-progress');
+      const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
       displayTasks(filteredTasks);
     });
   });

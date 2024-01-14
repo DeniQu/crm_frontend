@@ -358,7 +358,7 @@ display=swap&#39;
     font-feature-settings: "clig" off, "liga" off;
     font: 400 15px Poppins, sans-serif;
   }
-  .task-status-new {
+  .task-status.new {
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     align-self: center;
@@ -374,11 +374,11 @@ display=swap&#39;
     background-color: #f0edfd;
   }
   @media (max-width: 991px) {
-    .task-status-new {
+    .task-status.new {
       text-wrap: initial;
     }
   }
-  .task-status-progress {
+  .task-status.progress {
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     align-self: center;
@@ -394,11 +394,11 @@ display=swap&#39;
     background-color: #eaf5ff;
   }
   @media (max-width: 991px) {
-    .task-status-progress {
+    .task-status.progress {
       text-wrap: initial;
     }
   }
-  .task-status-completed{
+  .task-status.completed{
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     align-self: center;
@@ -414,7 +414,7 @@ display=swap&#39;
     background-color: #eeffe0;
   }
   @media (max-width: 991px) {
-    .task-status-completed {
+    .task-status.completed {
       text-wrap: initial;
     }
   }

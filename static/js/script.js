@@ -62,7 +62,8 @@ function displayTasks(tasks) {
     taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
     taskInfoDiv.appendChild(taskDateDiv);
 
-    const taskStatusDiv = createDivElement(getStatusClass(task), task.status);
+    const taskStatusDiv = createDivElement('task-status', task.status);
+    taskStatusDiv.classList.add(getStatusClass(task));
 
     taskBarDiv.appendChild(taskInfoDiv);
     taskBarDiv.appendChild(taskStatusDiv);
@@ -76,11 +77,11 @@ function displayTasks(tasks) {
 function getStatusClass(task) {
   switch (task.status) {
     case 'In progress':
-      return 'task-status-progress';
+      return 'progress';
     case 'Done':
-      return 'task-status-completed';
+      return 'completed';
     default:
-      return 'task-status-new';
+      return 'new';
   }
 }
 

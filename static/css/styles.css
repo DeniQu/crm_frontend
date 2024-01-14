@@ -398,7 +398,7 @@ display=swap&#39;
       text-wrap: initial;
     }
   }
-  .task-status-completed {
+  .task-status-completed{
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     align-self: center;

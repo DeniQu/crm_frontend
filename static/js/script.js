@@ -95,14 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
       statusDivs.forEach(div => div.classList.remove('status-active'));
       statusDiv.classList.add('status-active');
 
+
       switch (filterClass) {
         case 'all':
-          const allTasks = tasksData.filter(task => getStatusClass(task) === 'new' || 'progress' );
-          displayTasks(allTasks);
+          displayTasks(tasksData);
+          break
 
         default:
           const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
-          console.error('filtered', filteredTasks);
           displayTasks(filteredTasks);
 
       }

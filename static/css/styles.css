@@ -315,7 +315,7 @@ display=swap&#39;
     align-items: flex-start;
     align-self: stretch;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 6px;
   }
   .task-category-img {

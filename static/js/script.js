@@ -97,8 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       switch (filterClass) {
         case 'all':
-          displayTasks(tasksData);
-          console.error('nu davay', tasksData)
+          const allTasks = tasksData;
+          displayTasks(allTasks);
+          console.error('nu davay', allTasks);
         default:
           const filteredTasks = tasksData.filter(task => getStatusClass(task) === filterClass);
           displayTasks(filteredTasks);

@@ -93,8 +93,8 @@ async function loadTasks() {
       taskStatusDiv.classList.add('task-status-new');
       taskStatusDiv.textContent = task.status;
       
-      taskTextDiv.appendChild(taskInfoDiv);
-      taskTextDiv.appendChild(taskStatusDiv);
+      taskBarDiv.appendChild(taskInfoDiv);
+      taskBarDiv.appendChild(taskStatusDiv);
 
       taskDiv.appendChild(taskBarDiv);
       

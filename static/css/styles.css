@@ -231,18 +231,6 @@ display=swap&#39;
       justify-content: center;
     }
   }
-  .status-active {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
-    background-color: #613be7;
-    flex: 1;
-    padding: 4px;
-    font: 600 14px/140% Poppins, sans-serif;
-  }
   .status {
     color: #6e7591;
     text-align: center;
@@ -254,6 +242,18 @@ display=swap&#39;
     flex: 1;
     padding: 4px;
     font: 400 14px/140% Poppins, sans-serif;
+  }
+  .status-active {
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    background-color: #613be7;
+    flex: 1;
+    padding: 4px;
+    font: 600 14px/140% Poppins, sans-serif;
   }
   .tasks-list {
     align-items: flex-start;

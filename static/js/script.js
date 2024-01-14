@@ -48,6 +48,17 @@ async function loadTasks() {
       return img;
     };
 
+    const getStatusClass = (status) => {
+      switch (status) {
+        case 'In progress':
+          return 'task-status-progress';
+        case 'Done':
+          return 'task-status-completed';
+        default:
+          return 'task-status-new';
+      }
+    };
+
     tasks.forEach(task => {
       const taskDiv = document.createElement('div');
       taskDiv.classList.add('task');
@@ -72,7 +83,7 @@ async function loadTasks() {
       taskDateDiv.appendChild(createDivElement('task-date-text', task.date));
       taskInfoDiv.appendChild(taskDateDiv);
 
-      const taskStatusDiv = createDivElement('task-status-new', task.status);
+      const taskStatusDiv = createDivElement(getStatusClass(task.status), task.status);
 
       taskBarDiv.appendChild(taskInfoDiv);
       taskBarDiv.appendChild(taskStatusDiv);
@@ -85,6 +96,7 @@ async function loadTasks() {
     console.error('Error loading tasks:', error);
   }
 }
+
 
 
 // Вызываем функцию loadTasks() при загрузке страницы

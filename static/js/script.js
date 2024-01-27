@@ -2,7 +2,8 @@ let tasksData = []; // Хранение данных о задачах
 
 async function loadTasks() {
   try {
-    const response = await fetch('https://tg-crm-backend.onrender.com/task/');
+    // const response = await fetch('https://tg-crm-backend.onrender.com/task/');
+    const response = await fetch('https://crm-backend-3dov.onrender.com/task/');
     if (!response.ok) {
       throw new Error('Failed to fetch tasks');
     }

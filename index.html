@@ -152,9 +152,10 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
       let tg = window.Telegram.WebApp;
-      let userName = document.getElementsByClassName('user-name');
-      // userName.value = tg.initDataUnsafe.user.first_name
-      userName.value = "123"
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementsByClassName('user-name').value = '123';
+        // userName.value = tg.initDataUnsafe.user.first_name
+      });
     </script>
   </body>
 </html>

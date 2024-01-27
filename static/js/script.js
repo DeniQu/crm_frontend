@@ -1,5 +1,9 @@
 let tasksData = []; // Хранение данных о задачах
 
+async function loadTgInfo() {
+  
+}
+
 async function loadTasks() {
   try {
     const response = await fetch('https://tg-crm-backend.onrender.com/task/');
@@ -86,6 +90,7 @@ function getStatusClass(task) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  loadTgInfo();
   loadTasks();
 
   const statusDivs = document.querySelectorAll('.status');

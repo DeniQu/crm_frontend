@@ -1923,6 +1923,7 @@
   border-style: none;
   padding: 0;
 }
+
 :where(
     button,
     input:is(

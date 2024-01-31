@@ -7,7 +7,7 @@ async function loadTgInfo() {
 async function loadTasks() {
   try {
     // const response = await fetch('https://tg-crm-backend.onrender.com/task/');
-    const response = await fetch('https://crm-backend-3dov.onrender.com/task/404635573/');
+    const response = await fetch('https://crm-backend-3dov.onrender.com/tasks/404635573/');
     if (!response.ok) {
       throw new Error('Failed to fetch tasks');
     }

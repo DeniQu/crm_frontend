@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html
+  lang="ru"
+  style="
+    --tg-color-scheme: light;
+    --tg-theme-bg-color: #ffffff;
+    --tg-theme-text-color: #000000;
+    --tg-theme-hint-color: #707579;
+    --tg-theme-link-color: #3390ec;
+    --tg-theme-button-color: #3390ec;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-secondary-bg-color: #f4f4f5;
+    --tg-theme-header-bg-color: #ffffff;
+    --tg-theme-accent-text-color: #3390ec;
+    --tg-theme-section-bg-color: #ffffff;
+    --tg-theme-section-header-text-color: #707579;
+    --tg-theme-subtitle-text-color: #707579;
+    --tg-theme-destructive-text-color: #e53935;
+    --tg-viewport-height: 747.5px;
+    --tg-viewport-stable-height: 747.5px;
+    color-scheme: light;
+  "
+>
+  <head>
+    <script
+      async=""
+      type="module"
+      crossorigin=""
+      src="/utf/assets/index-c6ae66ea.js"
+    ></script>
+    <link rel="stylesheet" href="/utf/assets/index-12ed5e40.css" />
+
+    <style>
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(90, 90, 90, 0.3) transparent;
+      }
+
+      *::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: transparent;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba(90, 90, 90, 0.3);
+      }
+
+      *::-webkit-scrollbar-corner {
+        background-color: transparent;
+      }
+    </style>
+    <title>UTasks</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="UTasks" />
+    <meta name="description" content="First telegram-native task manager" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="manifest" href="/utf/manifest.json" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/(home)-de133dde.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/project.network-1db41bc7.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/project.context-84706ac8.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/persist-resource-ed3c076a.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/createPath-63910385.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/Calendar-f6a344e9.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/profile.context-c332de47.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/Arrow-e7cd5ebd.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/initials-avatar-b30a9d1d.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/model-ac926f76.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/index-a31ffcbd.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/Checkmark-fb4b1518.js"
+    />
+    <link rel="stylesheet" href="/utf/assets/Calendar-6472949d.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/create-task.ui-6f9e28ee.js"
+    />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/Create-d3f1cff4.js"
+    />
+    <link rel="stylesheet" href="/utf/assets/create-task-81f4148f.css" />
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="/utf/assets/premium-star-88193ee5.js"
+    />
+    <title>UTasks</title>
+  </head>
+  <body>
+    <main class="h-full p-4 flex flex-col items-stretch gap-4 pb-20.5">
+      <div class="grid grid-cols-[1fr_auto] gap-4 py-0.5">
+        <a
+          link=""
+          href="/utf//profile/"
+          class="flex items-center gap-3 px-3 overflow-hidden inactive"
+          ><div
+            class="relative inline-block ml--0.5 mr--0.5 min-w-[40px]! min-h-[40px]! w-[40px]! h-[40px]!"
+            title="Denis"
+          >
+            <img
+              alt="Avatar"
+              class="absolute rounded-full h-full w-full left-0 top-0"
+              src="https://app.utasks.io/utb/api/files/AQADAgADrqcxG7U_HhgACAIAA7U_HhgABDTDx9m0aOFDNAQ"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center flex-grow pb-1"
+            style="max-width: calc(100% - 2.5rem)"
+          >
+            <div class="flex items-center max-w-full">
+              <span
+                class="line-height-[1.375rem] font-510 text-ellipsis max-h-[1.375rem] whitespace-nowrap overflow-hidden"
+                style="max-width: calc(100% - 1rem)"
+                >Denis</span
+              ><svg
+                width="24"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 fill-tg_text!"
+              >
+                <g clip-path="url(#9__a)">
+                  <path
+                    clip-rule="evenodd"
+                    d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="9__a">
+                    <path fill="#fff" d="M0 0h24v24H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="c-tg_hint line-height-[1rem]"><span>Free</span></span>
+          </div></a
+        >
+        <!-- <a
+          class="p-1 pr-4 inline-flex rounded-full bg-tg_bg max-w-34 my-0.5 overflow-hidden"
+          href="https://t.me/UTasksBlogRU"
+          ><img
+            alt="Telegram"
+            class="mr-2.5 w-8 h-8 rounded-full"
+            src="/utf/assets/Telegram-c3de7996.png"
+          />
+          <div class="flex flex-col my--1 justify-center">
+            <p class="m-0 app-text-footnote whitespace-nowrap">UR News</p>
+            <span
+              class="m-0 app-text-caption-regular whitespace-nowrap c-tg_hint"
+              >Telegram канал</span
+            >
+          </div></a> -->
+      </div>
+      <!-- <ul class="reset-list bg-tg_bg rounded-3">
+        <li class="relative [&amp;:last-child_.item-name]:b-b-0">
+          <button
+            type="button"
+            class="flex items-start w-full bg-transparent b-0 py-2 px-0"
+          >
+            <div class="mx-4 mt-1">
+              <svg
+                width="30"
+                height="30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#42__a)">
+                  <rect width="30" height="30" rx="7" fill="#2EC851"></rect>
+                  <path
+                    d="M7 10a5 5 0 1 1 10 0 5 5 0 0 1-10 0ZM15 21.5c0-1.5.508-2.882 1.363-3.982A5.847 5.847 0 0 0 13.936 17h-3.93c-1.302 0-2.551.418-3.472 1.16-1.293 1.044-1.81 3.014-1.391 4.632.194.751.631 1.026 1.391 1.409.883.445 1.998.566 3.302.707l.17.018c1.526.166 3.93 0 3.93 0s.935-.095 1.878-.274A6.471 6.471 0 0 1 15 21.5ZM18.063 15.032c-.432 0-.604-.514-.35-.865a7.048 7.048 0 0 0 1.341-4.151 7.048 7.048 0 0 0-1.341-4.151c-.254-.35-.082-.865.35-.865 2.737 0 4.955 2.246 4.955 5.016s-2.218 5.016-4.955 5.016ZM26.5 21.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-5.005-3.503a.625.625 0 0 0-.625.625v2.248h-2.247a.625.625 0 1 0 0 1.25h2.247v2.252a.625.625 0 1 0 1.25 0V22.12h2.253a.625.625 0 1 0 0-1.25H22.12v-2.248a.625.625 0 0 0-.625-.625Z"
+                    fill="#fff"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="42__a">
+                    <path fill="#fff" d="M0 0h30v30H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="item-name inline-flex flex-col items-stretch text-left flex-grow pr-4 mb--2 pb-2 b-b-1 b-b-solid b-b-tg_bg_secondary"
+            >
+              <span
+                class="inline-flex justify-between c-tg_hint app-text-body-regular items-center c-tg_text"
+                >Добавить в чат<span class="mt--0.5"
+                  ><span class="c-tg_hint app-text-footnote">0/2</span></span
+                ></span
+              ><span class="c-tg_hint app-text-subheadline"
+                >Добавьте бота в групповой чат Telegram для создания совместного
+                проекта</span
+              >
+            </div>
+          </button>
+        </li>
+      </ul> -->
+      <form
+        class="relative bg-tg_bg rounded-3 h-11 min-h-11 focus:h-33 focus:shadow-card focus-within:h-33 focus-within:shadow-card [&amp;:focus-within>div>svg.plus]:w-0 [&amp;:focus-within>div>svg.plus]:mr-0 100-app-transition-height,box-shadow overflow-hidden shadow-none"
+        id="create-task"
+      >
+        <div class="flex items-center px-4 h-11 w-full">
+          <svg
+            width="30"
+            height="30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="plus fill-tg_hint h-7.4 w-7.4 mr-4 100-app-transition-width,margin"
+          >
+            <path
+              d="M16 9a1 1 0 1 0-2 0v5H9a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5V9Z"
+            ></path></svg
+          ><input
+            class="flex-grow p-0 py-2.5 placeholder:c-tg_hint app-text-subheadline"
+            id="create-task-input"
+            enterkeyhint="send"
+            inputmode="text"
+            type="text"
+            placeholder="Добавить задачу"
+            wfd-id="id0"
+          />
+        </div>
+        <div class="flex items-center px-4 w-full h-11 gap-2">
+          <button type="button" class="relative bg-transparent cursor-pointer">
+            <div class="flex gap-1 items-center">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="min-w-5 h-5 fill-tg_hint"
+              >
+                <path
+                  d="M4.997 7.629c0-.345.28-.625.625-.625h8.76a.625.625 0 1 1 0 1.25h-8.76a.625.625 0 0 1-.625-.625ZM13.25 14.502a1.25 1.25 0 1 0 0-2.502 1.25 1.25 0 0 0 0 2.502Z"
+                ></path>
+                <path
+                  d="M6.625 1.255c.345 0 .625.28.625.625v1.122h5.502V1.88a.625.625 0 1 1 1.25 0v1.122l.754.001c.298.003.56.01.787.028.373.03.71.096 1.028.257.494.252.895.653 1.147 1.147.161.317.226.655.257 1.027.029.36.029.8.029 1.339v6.647c0 .538 0 .98-.03 1.339-.03.372-.095.71-.256 1.027a2.625 2.625 0 0 1-1.147 1.147c-.317.161-.655.226-1.028.257-.359.03-1.554.03-2.092.03H6.55c-.538 0-1.726 0-2.085-.03-.372-.03-.71-.096-1.027-.257a2.625 2.625 0 0 1-1.147-1.147c-.162-.317-.227-.655-.257-1.027-.03-.36-.03-.8-.03-1.339V6.801c0-.538 0-.98.03-1.339.03-.372.095-.71.257-1.027a2.625 2.625 0 0 1 1.147-1.147c.317-.161.655-.226 1.027-.257.229-.018.49-.025.79-.028L6 3.002V1.88c0-.345.28-.625.625-.625Zm-2.06 3.022c-.294.024-.45.068-.56.125-.26.132-.47.342-.602.6-.056.112-.1.267-.124.562-.025.302-.025.693-.025 1.263v6.595c0 .57 0 .96.025 1.263.024.295.068.45.124.561.132.26.343.47.601.601.111.057.267.1.562.125.302.025 1.439.025 2.009.025h6.85c.57 0 1.714 0 2.017-.025.294-.024.45-.068.561-.125.259-.131.47-.342.601-.6.057-.112.1-.267.125-.562.024-.302.025-.693.025-1.263V6.827c0-.57 0-.96-.025-1.263-.024-.295-.068-.45-.125-.561a1.374 1.374 0 0 0-.6-.601c-.112-.057-.268-.1-.562-.125-.303-.025-.693-.025-1.263-.025h-8.35c-.57 0-.961 0-1.263.025Z"
+                ></path></svg
+              ><span class="app-text-subtitle font-600 c-tg_hint">Сегодня</span>
+            </div>
+          </button>
+          <dialog class="fixed m-auto p-0 rounded-3 bg-tg_bg border-0">
+            <div class="px-5 pt-4 pb-1 flex justify-end">
+              <button type="button" class="app-text-smaller opacity-70">
+                Очистить
+              </button>
+            </div>
+            <div
+              class="px-5 max-w-full flex justify-between items-center overflow-hidden"
+            >
+              <label class="c-tg_hint flex items-center" for="cl-8-time"
+                >Укажите время:</label
+              ><input
+                type="time"
+                class="min-w-16 max-w-40% h-10 ml-4 text-center b-solid b-1 b-tg_hint rounded-2"
+                pattern="[0-9]{2}:[0-9]{2}"
+                id="cl-8-time"
+                wfd-id="id1"
+              />
+            </div>
+            <div class="flex justify-between gap-6 px-5 py-4">
+              <button
+                type="button"
+                class="bg-transparent px-5 py-2 rounded-2 flex-grow-2"
+              >
+                Отменить</button
+              ><button
+                type="button"
+                class="bg-tg_button! px-5 py-2 rounded-2 c-tg_button_text flex-grow-1"
+              >
+                Применить
+              </button>
+            </div>
+          </dialog>
+        </div>
+        <div
+          class="flex items-center justify-between px-4 w-full max-w-full h-11 b-t-1 b-t-solid b-t-tg_bg_secondary gap-2"
+        >
+          <div class="flex items-center gap-2 overflow-hidden pr-3">
+            <button
+              icon="[object SVGSVGElement]"
+              neutraltext="false"
+              class="flex gap-1 items-center bg-transparent disabled:bg-transparent p-0 overflow-hidden min-w-7"
+              tabindex="5"
+              type="button"
+            >
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="min-w-5 h-5 fill-tg_hint"
+              >
+                <path
+                  d="M2 4.624A2.625 2.625 0 0 1 4.625 2h2.953c.435 0 .853.175 1.158.485l2.27 2.303h4.368a2.624 2.624 0 0 1 2.625 2.624v6.964A2.624 2.624 0 0 1 15.374 17H4.625A2.624 2.624 0 0 1 2 14.376V4.624ZM4.625 3.25c-.76 0-1.375.615-1.375 1.374v9.752c0 .76.616 1.375 1.375 1.375h10.749c.76 0 1.375-.616 1.375-1.375V7.412c0-.759-.616-1.374-1.375-1.374h-4.63a.625.625 0 0 1-.446-.186l-2.453-2.49a.375.375 0 0 0-.267-.112H4.625Z"
+                ></path></svg
+              ><span
+                class="app-text-subtitle text-nowrap text-ellipsis font-600 max-w-full overflow-hidden mr-1 c-tg_hint"
+                >Входящие</span
+              >
+            </button>
+            <dialog class="fixed b-0 my-15 h-[70vh] bg-tg_bg rounded-2">
+              <ul
+                class="reset-list rounded-3 bg-tg_bg app-transition-max-height [&amp;_li:first-child_div[data-title]]:border-0 mb-2 [&amp;:last-child]:mb-0"
+              >
+                <li
+                  class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform [&amp;:not(:last-child)]:mb-1"
+                  data-id="g_inc"
+                  data-index="0"
+                >
+                  <div
+                    class="w-full h-full rounded-3 bg-tg_button [&amp;:hover>.select-bg]:bg-tg_button"
+                  >
+                    <div
+                      class="select-bg absolute rounded-2 w-full h-90% top-5% pointer-events-none z--1 opacity-50"
+                    ></div>
+                    <div
+                      role="button"
+                      class="flex pl-4 items-center cursor-pointer"
+                    >
+                      <div class="flex">
+                        <div
+                          class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                        >
+                          <svg
+                            width="30"
+                            height="30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="max-w-[30px]"
+                          >
+                            <g clip-path="url(#51__a)">
+                              <path
+                                d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                                fill="#FF9200"
+                              ></path>
+                              <path
+                                d="M6 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9Zm3-1a1 1 0 0 0-1 1v7h3.5l.662 1.06a2 2 0 0 0 1.696.94h2.284a2 2 0 0 0 1.695-.94L18.5 16H22V9a1 1 0 0 0-1-1H9Z"
+                                fill="#fff"
+                              ></path>
+                            </g>
+                            <defs>
+                              <clipPath id="51__a">
+                                <path fill="#fff" d="M0 0h30v30H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        data-title=""
+                        class="flex-grow inline-flex justify-between items-center ml-4 pr-2 py-[10px] overflow-hidden"
+                      >
+                        <div
+                          text-handle=""
+                          class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                        >
+                          <p
+                            class="app-text-body-regular w-full m-0 c-tg_button_text mr-2 overflow-hidden whitespace-nowrap text-ellipsis"
+                          >
+                            Входящие
+                          </p>
+                        </div>
+                        <div
+                          class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                        >
+                          <span class="min-w-6.5 text-center mr--1 c-tg_text"
+                            >0</span
+                          ><svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="app-transition-transform fill-tg_hint fill-tg_button_text!"
+                          >
+                            <g clip-path="url(#9__a)">
+                              <path
+                                clip-rule="evenodd"
+                                d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                              ></path>
+                            </g>
+                            <defs>
+                              <clipPath id="9__a">
+                                <path fill="#fff" d="M0 0h24v24H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul
+                class="reset-list rounded-3 flex flex-col items-stretch [&amp;_li]:bg-tg_bg [&amp;_li_div[data-title]]:border-0 mb-2 [&amp;:last-child]:mb-0 gap-2"
+              ></ul>
+            </dialog>
+          </div>
+          <button
+            type="submit"
+            class="rounded-full flex items-center relative bottom-0.25 p-0.5 bg-tg_hint!"
+            id="create-task-button"
+            disabled=""
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              id="create-icon"
+            >
+              <path
+                d="M18.707 12.707a1 1 0 0 0 0-1.414l-5-5a1 1 0 1 0-1.414 1.414L15.586 11H7a1 1 0 1 0 0 2h8.586l-3.293 3.293a1 1 0 0 0 1.414 1.414l5-5Z"
+                fill="#fff"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <ul
+        class="reset-list rounded-3 bg-tg_bg app-transition-max-height [&amp;_li:first-child_div[data-title]]:border-0"
+      >
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_pause"
+          data-index="0"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_all?name=Pause&amp;type=Dynamic"
+              state='{"name":"На паузе"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="max-w-[30px]"
+                  >
+                    <g clip-path="url(#53__a)">
+                      <path
+                        d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                        fill="#0078FF"
+                      ></path>
+                      <g fill="#fff">
+                        <path
+                          d="M15.998 15a.998.998 0 1 1-1.996 0 .998.998 0 0 1 1.996 0Z"
+                        ></path>
+                        <path
+                          d="M15 24a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm3.378-12.985a.5.5 0 0 1 .607.607l-1.339 5.3a1 1 0 0 1-.724.724l-5.3 1.339a.5.5 0 0 1-.607-.607l1.339-5.3a1 1 0 0 1 .725-.724l5.299-1.339Z"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="53__a">
+                        <path fill="#fff" d="M0 0h30v30H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    На паузе
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">0</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_inc"
+          data-index="1"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_inc?name=Incoming&amp;type=Dynamic"
+              state='{"name":"Входящие"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="max-w-[30px]"
+                  >
+                    <g clip-path="url(#51__a)">
+                      <path
+                        d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                        fill="#FF9200"
+                      ></path>
+                      <path
+                        d="M6 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9Zm3-1a1 1 0 0 0-1 1v7h3.5l.662 1.06a2 2 0 0 0 1.696.94h2.284a2 2 0 0 0 1.695-.94L18.5 16H22V9a1 1 0 0 0-1-1H9Z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="51__a">
+                        <path fill="#fff" d="M0 0h30v30H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    Входящие
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">0</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_tod"
+          data-index="2"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_tod?name=Today&amp;type=Dynamic"
+              state='{"name":"Сегодня"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <div class="relative">
+                    <svg
+                      width="30"
+                      height="30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#60__a)">
+                        <path
+                          d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                          fill="#2EC851"
+                        ></path>
+                        <path
+                          d="M11 4.499a1 1 0 0 0-1 1v1H9a3 3 0 0 0-3 3V21a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9.5a3 3 0 0 0-3-3h-1v-1a1 1 0 1 0-2 0v1h-6v-1a1 1 0 0 0-1-1Zm-2.25 5h12.5a.75.75 0 1 1 0 1.501H8.75a.75.75 0 1 1 0-1.501Z"
+                          fill="#fff"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="60__a">
+                          <path fill="#fff" d="M0 0h30v30H0z"></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p
+                      class="m-0 text-center flex items-center justify-center absolute left-0 right-0 top-[9px] h-[15px] sf-rounded text-[10px] line-height-180% c-[#2EC851] font-600 font-700!"
+                    >
+                      29
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    Сегодня
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">0</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_tom"
+          data-index="3"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_tom?name=Tomorrow&amp;type=Dynamic"
+              state='{"name":"Завтра"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="max-w-[30px]"
+                  >
+                    <g clip-path="url(#48__a)">
+                      <path
+                        d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                        fill="#FF375F"
+                      ></path>
+                      <path
+                        d="M11 4.498a1 1 0 0 0-1 1v1H9a3 3 0 0 0-3 3V21a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9.498a3 3 0 0 0-3-3h-1v-1a1 1 0 1 0-2 0v1h-6v-1a1 1 0 0 0-1-1Zm-2.25 5h12.5a.75.75 0 1 1 0 1.502H8.75a.75.75 0 0 1 0-1.502ZM20 21a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="48__a">
+                        <path fill="#fff" d="M0 0h30v30H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    Завтра
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">0</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_next7"
+          data-index="4"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_next7?name=Next+7+days&amp;type=Dynamic"
+              state='{"name":"Следующие 7 дней"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="max-w-[30px]"
+                  >
+                    <g clip-path="url(#50__a)">
+                      <path
+                        d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                        fill="#A59AEE"
+                      ></path>
+                      <path
+                        d="M10 5.498a1 1 0 1 1 2 0v1h6v-1a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3V21a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9.498a3 3 0 0 1 3-3h1v-1Zm11.25 4H8.75a.75.75 0 0 0 0 1.502h12.5a.75.75 0 0 0 0-1.502ZM12 15a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm0 4.501a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm3-3.001a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm1.5 3.001a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm3-3.001a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm1.5 3.001a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="50__a">
+                        <path fill="#fff" d="M0 0h30v30H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    Следующие 7 дней
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">0</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+        <li
+          class="relative rounded-3 bg-tg_bg [&amp;:not(.sortable-chosen)]:app-transition-transform"
+          data-id="g_compl"
+          data-index="5"
+        >
+          <div class="w-full h-full rounded-3">
+            <a
+              link=""
+              href="/utf//g_compl?name=Completed&amp;type=Dynamic"
+              state='{"name":"Выполненные"}'
+              class="flex pl-4 items-center inactive"
+              ><div class="flex">
+                <div
+                  class="relative inline-block min-w-[30px] max-w-[30px] min-h-[30px] max-h-[30px] rounded-1.5 overflow-hidden"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="max-w-[30px]"
+                  >
+                    <g clip-path="url(#52__a)">
+                      <path
+                        d="M0 12.8c0-4.48 0-6.72.872-8.432A8 8 0 0 1 4.368.872C6.08 0 8.32 0 12.8 0h4.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 6.08 30 8.32 30 12.8v4.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-4.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C0 23.92 0 21.68 0 17.2v-4.4Z"
+                        fill="#8D8C93"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 24a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm5.207-10.796a1 1 0 0 0-1.414-1.414l-4.796 4.795-2.29-2.292a1 1 0 1 0-1.415 1.414l2.998 3a1 1 0 0 0 1.414 0l5.503-5.503Z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="52__a">
+                        <path fill="#fff" d="M0 0h30v30H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-title=""
+                class="flex-grow inline-flex justify-between items-center border-t border-t-solid b-tg_bg_secondary ml-4 pr-2 py-[10px] overflow-hidden"
+              >
+                <div
+                  text-handle=""
+                  class="inline-flex flex-grow max-w-full flex-col gap-1 overflow-hidden app-transition-padding-right-100"
+                >
+                  <p
+                    class="app-text-body-regular w-full m-0 overflow-hidden whitespace-nowrap text-ellipsis"
+                  >
+                    Выполненные
+                  </p>
+                </div>
+                <div
+                  class="flex gap-1 items-center c-tg_hint self-center h-6 text-center"
+                >
+                  <span class="min-w-6.5 text-center mr--1">1</span
+                  ><svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="app-transition-transform fill-tg_hint"
+                  >
+                    <g clip-path="url(#9__a)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.089 11.259c.41.41.41 1.073 0 1.482L9.83 18a.75.75 0 1 1-1.06-1.06L13.708 12l-4.94-4.94A.75.75 0 1 1 9.83 6l5.259 5.259Z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="9__a">
+                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </li>
+      </ul>
+      <ul
+        class="reset-list rounded-3 flex flex-col items-stretch [&amp;_li]:bg-tg_bg [&amp;_li_div[data-title]]:border-0 gap-4"
+      ></ul>
+      <div
+        class="flex-col gap-2 items-center justify-between p-7 pb-20 cursor-pointer"
+        style="display: none"
+      >
+        <img
+          class="w-64 h-64 max-w-64 max-h-64"
+          src="/utf/empty-project-light.png"
+          alt="Всё схвачено"
+        />
+        <p class="app-text-body-emphasized m-0 text-center">Всё схвачено</p>
+        <p class="app-text-footnote m-0 text-center">
+          Добавляйте новые задачи в&nbsp;два клика или&nbsp;переходите
+          к&nbsp;подробному созданию
+        </p>
+      </div>
+      <button
+        type="button"
+        id="create-button"
+        class="bg-tg_button! fixed rounded-4.5 flex items-center justify-center p-0 b-0 w-12 h-12 z-100 right-4 app-transition-bottom safe-bottom"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-white app-transition-transform w-6 h-6"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.778-5c0-.614-.547-1.111-1.222-1.111-.675 0-1.222.497-1.222 1.111v3.778H7c-.613 0-1.11.547-1.11 1.222 0 .675.497 1.222 1.11 1.222h3.778V17c0 .614.547 1.111 1.222 1.111.675 0 1.222-.497 1.222-1.111v-3.778H17c.614 0 1.111-.547 1.111-1.222 0-.675-.497-1.222-1.11-1.222h-3.779V7Z"
+          ></path>
+        </svg>
+      </button>
+      <div
+        id="artificial-backdrop"
+        class="fixed top-0 left-0 p-4 w-app h-app z-99 bg-overlay hidden"
+      ></div>
+      <dialog
+        class="fixed b-0 p-0 bg-tg_bg z-100 w-auto mx-4 my-0 safe-bottom-82! rounded-3"
+      >
+        <ul class="reset-list py-2">
+          <li class="relative [&amp;:last-child_.item-name]:b-b-0">
+            <button
+              type="button"
+              class="flex items-start w-full bg-transparent b-0 py-2 px-0"
+            >
+              <div class="mx-4 mt-1">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#30__a)">
+                    <rect width="30" height="30" rx="7" fill="#0078FF"></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9 6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3H9Zm12.06 5.061a1.5 1.5 0 1 0-2.121-2.12l-1.469 1.467 2.12 2.123 1.47-1.47Zm-2.53 2.53-2.12-2.122-6.63 6.63L9 21.003h.001l2.89-.774 6.638-6.638Z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="30__a">
+                      <path fill="#fff" d="M0 0h30v30H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="item-name inline-flex flex-col items-stretch text-left flex-grow pr-4 mb--2 pb-2 b-b-1 b-b-solid b-b-tg_bg_secondary"
+              >
+                <span
+                  class="inline-flex justify-between c-tg_hint app-text-body-regular items-center c-tg_text"
+                  >Новая задача<span class="mt--0.5"></span></span
+                ><span class="c-tg_hint app-text-subheadline"
+                  >Создайте задачу в папке "Входящие" или в проект</span
+                >
+              </div>
+            </button>
+          </li>
+          <li class="relative [&amp;:last-child_.item-name]:b-b-0">
+            <button
+              type="button"
+              class="flex items-start w-full bg-transparent b-0 py-2 px-0"
+            >
+              <div class="mx-4 mt-1">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#42__a)">
+                    <rect width="30" height="30" rx="7" fill="#2EC851"></rect>
+                    <path
+                      d="M7 10a5 5 0 1 1 10 0 5 5 0 0 1-10 0ZM15 21.5c0-1.5.508-2.882 1.363-3.982A5.847 5.847 0 0 0 13.936 17h-3.93c-1.302 0-2.551.418-3.472 1.16-1.293 1.044-1.81 3.014-1.391 4.632.194.751.631 1.026 1.391 1.409.883.445 1.998.566 3.302.707l.17.018c1.526.166 3.93 0 3.93 0s.935-.095 1.878-.274A6.471 6.471 0 0 1 15 21.5ZM18.063 15.032c-.432 0-.604-.514-.35-.865a7.048 7.048 0 0 0 1.341-4.151 7.048 7.048 0 0 0-1.341-4.151c-.254-.35-.082-.865.35-.865 2.737 0 4.955 2.246 4.955 5.016s-2.218 5.016-4.955 5.016ZM26.5 21.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-5.005-3.503a.625.625 0 0 0-.625.625v2.248h-2.247a.625.625 0 1 0 0 1.25h2.247v2.252a.625.625 0 1 0 1.25 0V22.12h2.253a.625.625 0 1 0 0-1.25H22.12v-2.248a.625.625 0 0 0-.625-.625Z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="42__a">
+                      <path fill="#fff" d="M0 0h30v30H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="item-name inline-flex flex-col items-stretch text-left flex-grow pr-4 mb--2 pb-2 b-b-1 b-b-solid b-b-tg_bg_secondary"
+              >
+                <span
+                  class="inline-flex justify-between c-tg_hint app-text-body-regular items-center c-tg_text"
+                  >Добавить в чат<span class="mt--0.5"
+                    ><span class="c-tg_hint app-text-footnote">0/2</span></span
+                  ></span
+                ><span class="c-tg_hint app-text-subheadline"
+                  >Добавьте бота в групповой чат Telegram для создания
+                  совместного проекта</span
+                >
+              </div>
+            </button>
+          </li>
+          <li class="relative [&amp;:last-child_.item-name]:b-b-0">
+            <button
+              type="button"
+              class="flex items-start w-full bg-transparent b-0 py-2 px-0"
+            >
+              <div class="mx-4 mt-1">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#41__a)">
+                    <rect width="30" height="30" rx="7" fill="#FF9200"></rect>
+                    <path
+                      d="M11.4 5c-.636 0-1.247.279-1.697.775A2.792 2.792 0 0 0 9 7.647V18.5c0 1 .5 1.5 1.5 1.5h12.1c.636 0 1.247-.279 1.697-.775.45-.497.703-1.17.703-1.872v-7.059c0-.702-.253-1.375-.703-1.872a2.292 2.292 0 0 0-1.697-.775h-5.269l-2.165-2.389A.764.764 0 0 0 14.6 5h-3.2Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M20.876 22H10a3 3 0 0 1-3-3v-8.84c-1.165.384-2 1.42-2 2.64v8.4C5 22.746 6.343 24 8 24h10c1.359 0 2.507-.843 2.876-2Z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="41__a">
+                      <path fill="#fff" d="M0 0h30v30H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="item-name inline-flex flex-col items-stretch text-left flex-grow pr-4 mb--2 pb-2 b-b-1 b-b-solid b-b-tg_bg_secondary"
+              >
+                <span
+                  class="inline-flex justify-between c-tg_hint app-text-body-regular items-center c-tg_text"
+                  >Новый личный проект<span class="mt--0.5"
+                    ><span class="c-tg_hint app-text-footnote">0/2</span></span
+                  ></span
+                ><span class="c-tg_hint app-text-subheadline"
+                  >Создайте список, в котором все задачи нацелены на один
+                  результат</span
+                >
+              </div>
+            </button>
+            <dialog
+              class="fixed max-w-full w-full m-0 p-0 b-0 bg-tg_bg border-rounded-t-3 safe-bottom-0!"
+            >
+              <button
+                class="bg-transparent absolute p-0 right-1 top-1 w-8 h-8 flex items-center justify-center"
+                tabindex="7"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="rotate--45 fill-tg_hint w-4.5 h-4.5"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.778-5c0-.614-.547-1.111-1.222-1.111-.675 0-1.222.497-1.222 1.111v3.778H7c-.613 0-1.11.547-1.11 1.222 0 .675.497 1.222 1.11 1.222h3.778V17c0 .614.547 1.111 1.222 1.111.675 0 1.222-.497 1.222-1.111v-3.778H17c.614 0 1.111-.547 1.111-1.222 0-.675-.497-1.222-1.11-1.222h-3.779V7Z"
+                  ></path>
+                </svg>
+              </button>
+              <form id="new-project" class="[&amp;>:not(:last-child)]:px-5">
+                <input
+                  autofocus=""
+                  id="project-title"
+                  name="project-title"
+                  enterkeyhint="next"
+                  inputmode="text"
+                  type="text"
+                  class="flex-grow pl-0 pt-3 pb-2 pr-10! app-text-title w-full"
+                  tabindex="1"
+                  placeholder="Название проекта"
+                  wfd-id="id2"
+                />
+                <section
+                  id="project-params"
+                  class="mt-4 px-5 py-2.5 flex items-center justify-between bg-tg_bg_secondary overflow-x-auto"
+                >
+                  <div
+                    class="flex items-center c-tg_hint max-w-80% m-0 cursor-pointer"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="min-w-7 mr-1"
+                    >
+                      <g fill-rule="evenodd" clip-rule="evenodd" fill="#999">
+                        <path
+                          d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"
+                        ></path>
+                        <path
+                          d="M11 8a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1ZM10 12a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1-1-1Z"
+                        ></path>
+                      </g></svg
+                    ><span class="app-text-smaller line-clamp-2"
+                      >Задачи можно будет добавить после создания
+                      «Проекта»</span
+                    >
+                  </div>
+                </section>
+              </form>
+            </dialog>
+          </li>
+          <li class="relative [&amp;:last-child_.item-name]:b-b-0">
+            <button
+              type="button"
+              class="flex items-start w-full bg-transparent b-0 py-2 px-0"
+              disabled=""
+            >
+              <div class="mx-4 mt-1 filter-grayscale">
+                <svg
+                  width="30"
+                  height="30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#43__a)">
+                    <rect width="30" height="30" rx="7" fill="#BC56D7"></rect>
+                    <path
+                      d="M14.51 5.628a1 1 0 0 1 .98 0l8 4.5a1 1 0 0 1 0 1.744l-8 4.5a1 1 0 0 1-.98 0l-8-4.5a1 1 0 0 1 0-1.744l8-4.5Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M6.128 14.51a1 1 0 0 1 1.362-.382L15 18.353l7.51-4.225a1 1 0 0 1 .98 1.744l-8 4.5a1 1 0 0 1-.98 0l-8-4.5a1 1 0 0 1-.382-1.362Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M7.49 18.128a1 1 0 0 0-.98 1.744l8 4.5a1 1 0 0 0 .98 0l8-4.5a1 1 0 0 0-.98-1.744L15 22.353l-7.51-4.225Z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="43__a">
+                      <path fill="#fff" d="M0 0h30v30H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="item-name inline-flex flex-col items-stretch text-left flex-grow pr-4 mb--2 pb-2 b-b-1 b-b-solid b-b-tg_bg_secondary"
+              >
+                <span
+                  class="inline-flex justify-between c-tg_hint app-text-body-regular items-center"
+                  >Новая область<span class="mt--0.5"
+                    ><span class="app-text-footnote"
+                      ><svg
+                        width="16"
+                        height="16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                      >
+                        <path
+                          d="M0 8c0-2.8 0-4.2.545-5.27A5 5 0 0 1 2.73.545C3.8 0 5.2 0 8 0c2.8 0 4.2 0 5.27.545a5 5 0 0 1 2.185 2.185C16 3.8 16 5.2 16 8c0 2.8 0 4.2-.545 5.27a5 5 0 0 1-2.185 2.185C12.2 16 10.8 16 8 16c-2.8 0-4.2 0-5.27-.545A5 5 0 0 1 .545 13.27C0 12.2 0 10.8 0 8Z"
+                          fill="url(#16__a)"
+                        ></path>
+                        <path
+                          d="M7.662 2.992a.358.358 0 0 1 .676 0l1.066 3.083 3.244.066c.34.007.48.441.21.647L10.27 8.76l.94 3.124c.099.327-.268.595-.547.4L8 10.42l-2.664 1.864c-.279.195-.646-.073-.547-.4l.94-3.124-2.587-1.972c-.27-.206-.13-.64.21-.647l3.244-.066 1.066-3.083Z"
+                          fill="#fff"
+                        ></path>
+                        <defs>
+                          <radialGradient
+                            id="16__a"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="rotate(-42.709 20.461 8) scale(23.5891)"
+                          >
+                            <stop stop-color="#40A3E7"></stop>
+                            <stop offset="1" stop-color="#BC56D7"></stop>
+                          </radialGradient>
+                        </defs>
+                      </svg>
+                      Pro</span
+                    ></span
+                  ></span
+                ><span class="c-tg_hint app-text-subheadline opacity-50"
+                  >Список проектов в одной теме - например "Семья" или
+                  "Работа"</span
+                >
+              </div></button
+            ><a
+              link=""
+              href="/utf//subscribe"
+              class="absolute left-0 top-0 right-0 bottom-0 inactive"
+            ></a>
+            <dialog
+              class="fixed max-w-full w-full m-0 p-0 b-0 bg-tg_bg border-rounded-t-3 safe-bottom-0!"
+            >
+              <button
+                type="button"
+                class="bg-transparent absolute p-0 right-1 top-1 w-8 h-8 flex items-center justify-center"
+                tabindex="7"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="rotate--45 fill-tg_hint w-4.5 h-4.5"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.778-5c0-.614-.547-1.111-1.222-1.111-.675 0-1.222.497-1.222 1.111v3.778H7c-.613 0-1.11.547-1.11 1.222 0 .675.497 1.222 1.11 1.222h3.778V17c0 .614.547 1.111 1.222 1.111.675 0 1.222-.497 1.222-1.111v-3.778H17c.614 0 1.111-.547 1.111-1.222 0-.675-.497-1.222-1.11-1.222h-3.779V7Z"
+                  ></path>
+                </svg>
+              </button>
+              <form id="new-area" class="[&amp;>:not(:last-child)]:px-5">
+                <input
+                  autofocus=""
+                  id="area-title"
+                  name="area-title"
+                  enterkeyhint="next"
+                  inputmode="text"
+                  type="text"
+                  class="flex-grow pl-0 pt-3 pb-2 pr-10! app-text-title w-full"
+                  tabindex="1"
+                  placeholder="Название области"
+                  wfd-id="id3"
+                />
+                <section
+                  id="area-params"
+                  class="mt-4 px-5 py-2.5 flex items-center justify-between bg-tg_bg_secondary overflow-x-auto"
+                >
+                  <div
+                    class="flex items-center c-tg_hint max-w-80% m-0 cursor-pointer"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="min-w-7 mr-1"
+                    >
+                      <g fill-rule="evenodd" clip-rule="evenodd" fill="#999">
+                        <path
+                          d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"
+                        ></path>
+                        <path
+                          d="M11 8a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1ZM10 12a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1-1-1Z"
+                        ></path>
+                      </g></svg
+                    ><span class="app-text-smaller line-clamp-2"
+                      >Перетащите проект в созданную область, чтобы
+                      сгруппировать их вместе</span
+                    >
+                  </div>
+                </section>
+              </form>
+            </dialog>
+          </li>
+        </ul>
+      </dialog>
+    </main>
+    <div
+      class="fixed flex justify-between items-center bottom--20 left-4 right-4 bg-tg_bg rounded-3 py-2 p-3 z-110 app-transition-bottom shadow-xl shadow-black"
+    >
+      <div class="flex items-center gap-2">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-tg_hint rotate--45 app-transition-transform w-4 h-4 cursor-pointer"
+          role="button"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.778-5c0-.614-.547-1.111-1.222-1.111-.675 0-1.222.497-1.222 1.111v3.778H7c-.613 0-1.11.547-1.11 1.222 0 .675.497 1.222 1.11 1.222h3.778V17c0 .614.547 1.111 1.222 1.111.675 0 1.222-.497 1.222-1.111v-3.778H17c.614 0 1.111-.547 1.111-1.222 0-.675-.497-1.222-1.11-1.222h-3.779V7Z"
+          ></path></svg
+        ><span>Доступно обновление приложения</span>
+      </div>
+      <button class="bg-transparent! c-tg_button">Обновить</button>
+    </div>
+  </body>
+</html>

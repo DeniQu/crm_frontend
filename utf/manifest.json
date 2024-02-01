@@ -1,0 +1,575 @@
+{
+  "../../node_modules/dialog-polyfill/dialog-polyfill.css": {
+    "file": "assets/dialog-polyfill-faed6157.css",
+    "src": "../../node_modules/dialog-polyfill/dialog-polyfill.css"
+  },
+  "../../node_modules/dialog-polyfill/dist/dialog-polyfill.esm.js": {
+    "file": "assets/dialog-polyfill.esm-7ae1dd9e.js",
+    "isDynamicEntry": true,
+    "src": "../../node_modules/dialog-polyfill/dist/dialog-polyfill.esm.js"
+  },
+  "../../node_modules/workbox-window/build/workbox-window.prod.es5.mjs": {
+    "file": "assets/workbox-window.prod.es5-a7b12eab.js",
+    "isDynamicEntry": true,
+    "src": "../../node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
+  },
+  "../../node_modules/ym.js/lib/ym.module.js": {
+    "file": "assets/ym.module-cc840977.js",
+    "isDynamicEntry": true,
+    "src": "../../node_modules/ym.js/lib/ym.module.js"
+  },
+  "../../packages/icons/Telegram.png": {
+    "file": "assets/Telegram-c3de7996.png",
+    "src": "../../packages/icons/Telegram.png"
+  },
+  ".solid/index.css": {
+    "file": "assets/index-12ed5e40.css",
+    "src": ".solid/index.css"
+  },
+  ".solid/index.html": {
+    "css": [
+      "assets/index-12ed5e40.css"
+    ],
+    "dynamicImports": [
+      "src/routes/(home).tsx",
+      "src/routes/[...404].tsx",
+      "src/routes/[projectId].tsx",
+      "src/routes/[projectId]/[taskId].tsx",
+      "src/routes/[projectId]/create-task.tsx",
+      "src/routes/[projectId]/index.tsx",
+      "src/routes/create-task.tsx",
+      "src/routes/demo.tsx",
+      "src/routes/profile/about.tsx",
+      "src/routes/profile/index.tsx",
+      "src/routes/profile/settings/hour-cycle.tsx",
+      "src/routes/profile/settings/index.tsx",
+      "src/routes/profile/settings/language.tsx",
+      "src/routes/profile/settings/timezone.tsx",
+      "src/routes/profile/subscription.tsx",
+      "src/routes/profile/subscription/[result].tsx",
+      "src/routes/profile/subscription/index.tsx",
+      "src/routes/subscribe.tsx",
+      "../../node_modules/ym.js/lib/ym.module.js",
+      "../../node_modules/workbox-window/build/workbox-window.prod.es5.mjs",
+      "_en-5f4ef0fe.json",
+      "_es-7a187d5e.json",
+      "_ru-62329116.json",
+      "_en-5f4ef0fe.json",
+      "_es-7a187d5e.json",
+      "_ru-62329116.json"
+    ],
+    "file": "assets/index-a01f92b5.js",
+    "isEntry": true,
+    "src": ".solid/index.html"
+  },
+  "Calendar.css": {
+    "file": "assets/Calendar-6472949d.css",
+    "src": "Calendar.css"
+  },
+  "_Arrow-d3382362.js": {
+    "file": "assets/Arrow-d3382362.js",
+    "imports": [
+      "_createPath-63910385.js",
+      ".solid/index.html"
+    ]
+  },
+  "_Calendar-81dc3ec9.js": {
+    "css": [
+      "assets/Calendar-6472949d.css"
+    ],
+    "dynamicImports": [
+      "_en-4f50aba4.json",
+      "_es-876335c2.json",
+      "_ru-9265e7da.json",
+      "_en-4f50aba4.json",
+      "_es-876335c2.json",
+      "_ru-9265e7da.json",
+      "_en-f3269813.json",
+      "_es-3e7f7d5e.json",
+      "_ru-59d6ae1f.json",
+      "_en-f3269813.json",
+      "_es-3e7f7d5e.json",
+      "_ru-59d6ae1f.json",
+      "../../node_modules/dialog-polyfill/dist/dialog-polyfill.esm.js",
+      "_en-1f8d372f.json",
+      "_es-f227add0.json",
+      "_ru-7ebed4ec.json",
+      "_en-1f8d372f.json",
+      "_es-f227add0.json",
+      "_ru-7ebed4ec.json"
+    ],
+    "file": "assets/Calendar-81dc3ec9.js",
+    "imports": [
+      ".solid/index.html",
+      "_profile.context-43c1a76f.js",
+      "_project.context-77f57be8.js",
+      "_Arrow-d3382362.js",
+      "_persist-resource-4ec7c87b.js",
+      "_initials-avatar-9db499e5.js",
+      "_model-fc7144ae.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js"
+    ]
+  },
+  "_Checkmark-572d5fea.js": {
+    "file": "assets/Checkmark-572d5fea.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_Create-b0921969.js": {
+    "file": "assets/Create-b0921969.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_checkbox-f3ed67d7.js": {
+    "file": "assets/checkbox-f3ed67d7.js",
+    "imports": [
+      ".solid/index.html",
+      "_model-fc7144ae.js",
+      "_Arrow-d3382362.js"
+    ]
+  },
+  "_context-icon-a63c7b85.js": {
+    "file": "assets/context-icon-a63c7b85.js",
+    "imports": [
+      ".solid/index.html",
+      "_Calendar-81dc3ec9.js"
+    ]
+  },
+  "_create-task.ui-e3c37910.js": {
+    "css": [
+      "assets/create-task-81f4148f.css"
+    ],
+    "file": "assets/create-task.ui-e3c37910.js",
+    "imports": [
+      ".solid/index.html",
+      "_Calendar-81dc3ec9.js",
+      "_profile.context-43c1a76f.js",
+      "_model-fc7144ae.js",
+      "_project.network-beff772d.js",
+      "_project.context-77f57be8.js",
+      "_Create-b0921969.js"
+    ]
+  },
+  "_createPath-63910385.js": {
+    "file": "assets/createPath-63910385.js"
+  },
+  "_editor.ui-26b87555.js": {
+    "file": "assets/editor.ui-26b87555.js",
+    "imports": [
+      ".solid/index.html",
+      "_model-fc7144ae.js",
+      "_Calendar-81dc3ec9.js",
+      "_project.context-77f57be8.js",
+      "_profile.context-43c1a76f.js",
+      "_context-icon-a63c7b85.js",
+      "_initials-avatar-9db499e5.js",
+      "_checkbox-f3ed67d7.js",
+      "_Checkmark-572d5fea.js"
+    ]
+  },
+  "_index-927492b3.js": {
+    "dynamicImports": [
+      "_en-b048fc44.json",
+      "_es-a52aa282.json",
+      "_ru-beca3a1a.json",
+      "_en-b048fc44.json",
+      "_es-a52aa282.json",
+      "_ru-beca3a1a.json"
+    ],
+    "file": "assets/index-927492b3.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_index-df6ea570.js": {
+    "dynamicImports": [
+      "_en-5b033de1.json",
+      "_es-dfba8ee7.json",
+      "_ru-fff54ac9.json",
+      "_en-5b033de1.json",
+      "_es-dfba8ee7.json",
+      "_ru-fff54ac9.json"
+    ],
+    "file": "assets/index-df6ea570.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_index-dfeb92b4.js": {
+    "file": "assets/index-dfeb92b4.js",
+    "imports": [
+      ".solid/index.html",
+      "_Arrow-d3382362.js"
+    ]
+  },
+  "_initials-avatar-9db499e5.js": {
+    "file": "assets/initials-avatar-9db499e5.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_links-fe3ad866.js": {
+    "file": "assets/links-fe3ad866.js",
+    "imports": [
+      "_index-dfeb92b4.js",
+      ".solid/index.html",
+      "_Arrow-d3382362.js"
+    ]
+  },
+  "_model-fc7144ae.js": {
+    "file": "assets/model-fc7144ae.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_persist-resource-4ec7c87b.js": {
+    "file": "assets/persist-resource-4ec7c87b.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_premium-star-370dd05f.js": {
+    "file": "assets/premium-star-370dd05f.js",
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "_profile.context-43c1a76f.js": {
+    "file": "assets/profile.context-43c1a76f.js",
+    "imports": [
+      "_persist-resource-4ec7c87b.js",
+      ".solid/index.html"
+    ]
+  },
+  "_project.context-77f57be8.js": {
+    "dynamicImports": [
+      "_en-3f07afb4.json",
+      "_es-57c75a2a.json",
+      "_ru-d6ad63d1.json",
+      "_en-3f07afb4.json",
+      "_es-57c75a2a.json",
+      "_ru-d6ad63d1.json"
+    ],
+    "file": "assets/project.context-77f57be8.js",
+    "imports": [
+      "_persist-resource-4ec7c87b.js",
+      ".solid/index.html",
+      "_createPath-63910385.js"
+    ]
+  },
+  "_project.network-beff772d.js": {
+    "file": "assets/project.network-beff772d.js",
+    "imports": [
+      ".solid/index.html",
+      "_project.context-77f57be8.js"
+    ]
+  },
+  "_subscribe.ui-d710022a.js": {
+    "file": "assets/subscribe.ui-d710022a.js",
+    "imports": [
+      ".solid/index.html",
+      "_model-fc7144ae.js",
+      "_profile.context-43c1a76f.js",
+      "_index-df6ea570.js",
+      "_checkbox-f3ed67d7.js",
+      "_Create-b0921969.js",
+      "_premium-star-370dd05f.js",
+      "_Arrow-d3382362.js"
+    ]
+  },
+  "create-task.css": {
+    "file": "assets/create-task-81f4148f.css",
+    "src": "create-task.css"
+  },
+  "src/default.css": {
+    "file": "assets/default-2cdb84ea.css",
+    "src": "src/default.css"
+  },
+  "src/routes/(home).tsx": {
+    "assets": [
+      "assets/Telegram-c3de7996.png"
+    ],
+    "file": "assets/(home)-2b289f71.js",
+    "imports": [
+      ".solid/index.html",
+      "_project.network-beff772d.js",
+      "_Calendar-81dc3ec9.js",
+      "_create-task.ui-e3c37910.js",
+      "_project.context-77f57be8.js",
+      "_profile.context-43c1a76f.js",
+      "_initials-avatar-9db499e5.js",
+      "_premium-star-370dd05f.js",
+      "_Arrow-d3382362.js",
+      "_model-fc7144ae.js",
+      "_persist-resource-4ec7c87b.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_Create-b0921969.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/(home).tsx"
+  },
+  "src/routes/[...404].tsx": {
+    "file": "assets/_...404_-9bf3ae04.js",
+    "imports": [
+      ".solid/index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[...404].tsx"
+  },
+  "src/routes/[projectId].tsx": {
+    "file": "assets/_projectId_-f2c34a9a.js",
+    "imports": [
+      ".solid/index.html",
+      "_project.network-beff772d.js",
+      "_project.context-77f57be8.js",
+      "_persist-resource-4ec7c87b.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[projectId].tsx"
+  },
+  "src/routes/[projectId]/[taskId].tsx": {
+    "file": "assets/_taskId_-840f9725.js",
+    "imports": [
+      ".solid/index.html",
+      "_Calendar-81dc3ec9.js",
+      "_editor.ui-26b87555.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_project.context-77f57be8.js",
+      "_createPath-63910385.js",
+      "_Arrow-d3382362.js",
+      "_initials-avatar-9db499e5.js",
+      "_model-fc7144ae.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_context-icon-a63c7b85.js",
+      "_checkbox-f3ed67d7.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[projectId]/[taskId].tsx"
+  },
+  "src/routes/[projectId]/create-task.tsx": {
+    "file": "assets/create-task-be93f03b.js",
+    "imports": [
+      "_Calendar-81dc3ec9.js",
+      ".solid/index.html",
+      "_editor.ui-26b87555.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_project.context-77f57be8.js",
+      "_createPath-63910385.js",
+      "_Arrow-d3382362.js",
+      "_initials-avatar-9db499e5.js",
+      "_model-fc7144ae.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_context-icon-a63c7b85.js",
+      "_checkbox-f3ed67d7.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[projectId]/create-task.tsx"
+  },
+  "src/routes/[projectId]/index.tsx": {
+    "file": "assets/index-d441d54f.js",
+    "imports": [
+      ".solid/index.html",
+      "_project.context-77f57be8.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_Calendar-81dc3ec9.js",
+      "_project.network-beff772d.js",
+      "_context-icon-a63c7b85.js",
+      "_Arrow-d3382362.js",
+      "_initials-avatar-9db499e5.js",
+      "_checkbox-f3ed67d7.js",
+      "_create-task.ui-e3c37910.js",
+      "_model-fc7144ae.js",
+      "_Checkmark-572d5fea.js",
+      "_createPath-63910385.js",
+      "_index-dfeb92b4.js",
+      "_Create-b0921969.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[projectId]/index.tsx"
+  },
+  "src/routes/create-task.tsx": {
+    "file": "assets/create-task-eea76392.js",
+    "imports": [
+      "_Calendar-81dc3ec9.js",
+      ".solid/index.html",
+      "_editor.ui-26b87555.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_project.context-77f57be8.js",
+      "_createPath-63910385.js",
+      "_Arrow-d3382362.js",
+      "_initials-avatar-9db499e5.js",
+      "_model-fc7144ae.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_context-icon-a63c7b85.js",
+      "_checkbox-f3ed67d7.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/create-task.tsx"
+  },
+  "src/routes/demo.tsx": {
+    "file": "assets/demo-36fd4ac4.js",
+    "imports": [
+      ".solid/index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/demo.tsx"
+  },
+  "src/routes/profile/about.tsx": {
+    "dynamicImports": [
+      "_en-66459048.json",
+      "_es-0adde1d9.json",
+      "_ru-f96a5874.json",
+      "_en-66459048.json",
+      "_es-0adde1d9.json",
+      "_ru-f96a5874.json"
+    ],
+    "file": "assets/about-d32f4e6b.js",
+    "imports": [
+      ".solid/index.html",
+      "_links-fe3ad866.js",
+      "_initials-avatar-9db499e5.js",
+      "_index-dfeb92b4.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/about.tsx"
+  },
+  "src/routes/profile/index.tsx": {
+    "dynamicImports": [
+      "_en-0ad0dc72.json",
+      "_es-8d10ac2f.json",
+      "_ru-3f18556b.json",
+      "_en-0ad0dc72.json",
+      "_es-8d10ac2f.json",
+      "_ru-3f18556b.json"
+    ],
+    "file": "assets/index-621fe767.js",
+    "imports": [
+      ".solid/index.html",
+      "_profile.context-43c1a76f.js",
+      "_links-fe3ad866.js",
+      "_initials-avatar-9db499e5.js",
+      "_persist-resource-4ec7c87b.js",
+      "_index-dfeb92b4.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/index.tsx"
+  },
+  "src/routes/profile/settings/hour-cycle.tsx": {
+    "file": "assets/hour-cycle-edd8b8de.js",
+    "imports": [
+      ".solid/index.html",
+      "_index-927492b3.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/settings/hour-cycle.tsx"
+  },
+  "src/routes/profile/settings/index.tsx": {
+    "file": "assets/index-e325b433.js",
+    "imports": [
+      ".solid/index.html",
+      "_index-927492b3.js",
+      "_index-dfeb92b4.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/settings/index.tsx"
+  },
+  "src/routes/profile/settings/language.tsx": {
+    "file": "assets/language-44fc61a1.js",
+    "imports": [
+      ".solid/index.html",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/settings/language.tsx"
+  },
+  "src/routes/profile/settings/timezone.tsx": {
+    "file": "assets/timezone-1e3e61b7.js",
+    "imports": [
+      ".solid/index.html",
+      "_model-fc7144ae.js",
+      "_index-927492b3.js",
+      "_index-dfeb92b4.js",
+      "_Checkmark-572d5fea.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/settings/timezone.tsx"
+  },
+  "src/routes/profile/subscription.tsx": {
+    "file": "assets/subscription-a4dc9702.js",
+    "imports": [
+      ".solid/index.html",
+      "_subscribe.ui-d710022a.js",
+      "_model-fc7144ae.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_index-df6ea570.js",
+      "_checkbox-f3ed67d7.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js",
+      "_Create-b0921969.js",
+      "_premium-star-370dd05f.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/subscription.tsx"
+  },
+  "src/routes/profile/subscription/[result].tsx": {
+    "file": "assets/_result_-fffd1af6.js",
+    "imports": [
+      ".solid/index.html",
+      "_index-df6ea570.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/subscription/[result].tsx"
+  },
+  "src/routes/profile/subscription/index.tsx": {
+    "file": "assets/index-5ca3b7b9.js",
+    "isDynamicEntry": true,
+    "src": "src/routes/profile/subscription/index.tsx"
+  },
+  "src/routes/subscribe.tsx": {
+    "file": "assets/subscribe-878cb959.js",
+    "imports": [
+      ".solid/index.html",
+      "_subscribe.ui-d710022a.js",
+      "_model-fc7144ae.js",
+      "_profile.context-43c1a76f.js",
+      "_persist-resource-4ec7c87b.js",
+      "_index-df6ea570.js",
+      "_checkbox-f3ed67d7.js",
+      "_Arrow-d3382362.js",
+      "_createPath-63910385.js",
+      "_Create-b0921969.js",
+      "_premium-star-370dd05f.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/subscribe.tsx"
+  }
+}
